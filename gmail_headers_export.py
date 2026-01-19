@@ -196,8 +196,14 @@ def main():
     missing = sum(1 for r in records if not r.get("Canonical Email"))
     print(f"QA: Missing canonical email for {missing} records.")
 
-    path = save_json(records, output_dir=args.outdir)
-    print(f"Saved JSON to: {path}")
+# 1) Save timestamped JSON (history)
+    timestamped_path = save_json(records, output_dir="exports")
+    print(f"Saved JSON to: {timestamped_path}")
+
+# 2) Also update the stable file for analysis
+    latest_path = os.path.join("exports", "gmail_headers.json")
+    shutil.copyfile(timestamped_path, latest_path)
+    print(f"Updated latest export: {latest_path}")
 
 
 if __name__ == "__main__":

@@ -101,11 +101,14 @@ def main():
     parser = argparse.ArgumentParser(
         description="Analyze Gmail header JSON and produce ranking/report CSVs."
     )
+    
     parser.add_argument(
-        "json_file",
-        type=str,
-        help="Path to gmail_headers_YYYYMMDD_HHMMSS.json exported by gmail_headers_export.py",
-    )
+    "--json-file",
+    type=str,
+    default=os.path.join("exports", "gmail_headers.json"),
+    help="Path to gmail_headers JSON export (default: exports/gmail_headers.json)",
+)
+
     parser.add_argument(
         "--min-count",
         type=int,

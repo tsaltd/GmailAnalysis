@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Run Gmail Extract (7 days)",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/gmail_headers_export.py",
       "args": ["--query", "newer_than:7d", "--max", "200"],
@@ -14,12 +14,12 @@
     },
     {
       "name": "Run Header Analysis (last export)",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/gmail_headers_analysis.py",
       "args": [
-        "--input",
-        "${workspaceFolder}/exports/gmail_headers.json"
+       "--json-file",
+       "${workspaceFolder}/exports/gmail_headers.json"
       ],
       "console": "integratedTerminal"
     }
