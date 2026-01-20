@@ -1,0 +1,18 @@
+# Python runtime
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets (CRITICAL)
+credentials.json
+client_secret_*.json
+token.json
+*.token.json
+
+# Generated outputs
+exports/
+reports/
+
+# Editor / OS
+.vscode/
+.DS_Store
