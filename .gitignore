@@ -29,4 +29,5 @@ client_secret*.zip
 *.secrets*
 *.env
 .env.*
+*.zip
 
