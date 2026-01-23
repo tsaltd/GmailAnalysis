@@ -19,3 +19,12 @@ Work/
 # Editor / OS
 .vscode/
 .DS_Store
+
+# OAuth / secrets
+client_secret*.json
+client_secret*.zip
+*.secret*
+*.secrets*
+*.env
+.env.*
+
