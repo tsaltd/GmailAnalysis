@@ -3,31 +3,28 @@
 __pycache__/
 *.pyc
 
-# Secrets (CRITICAL)
-credentials.json
-client_secret_*.json
-token.json
-*.token.json
-
 # Generated outputs
 exports/
 reports/
+*.csv
 
 # Local work / scratch / artifacts
 Work/
-client_secret*.json
-*.secret*
 
 # Editor / OS
 .vscode/
 .DS_Store
 
-# OAuth / secrets
+# Secrets / OAuth (CRITICAL)
+credentials.json
+token.json
+*.token.json
 client_secret*.json
 client_secret*.zip
-*.secret*
-*.secrets*
 *.env
 .env.*
-*.zip
+*.secret*
+*.secrets*
 
+# Archives / artifacts
+*.zip

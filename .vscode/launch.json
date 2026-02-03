@@ -2,15 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Gmail Extract (7 days)",
-      "type": "debugpy",
-      "request": "launch",
-      "program": "${workspaceFolder}/gmail_headers_export.py",
-      "args": ["--query", "newer_than:7d", "--max", "200"],
-      "console": "integratedTerminal",
-      "env": {
-        "PYTHONPATH": "${workspaceFolder}"
-      }
+  "name": "Run Gmail Extract (7 days)",
+  "type": "debugpy",
+  "request": "launch",
+  "program": "${workspaceFolder}/gmail_headers_export.py",
+  "args": ["--query", "newer_than:7d", "--max", "4000"],
+  "console": "integratedTerminal",
+  "env": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "PYTHONUNBUFFERED": "1"
+  }
+}
+
     },
     {
       "name": "Run Header Analysis (last export)",
