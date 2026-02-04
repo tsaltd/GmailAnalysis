@@ -1,3 +1,7 @@
+⚠️ DEPRECATED
+
+This repository contains pre-beta experiments.
+Active development continues in a new repository.
 
 Design & planning:
 https://github.com/tsaltd/GmailAnalysis-Design
