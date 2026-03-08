@@ -19,7 +19,7 @@ Work/
 credentials.json
 token.json
 *.token.json
-client_secret*.json
+client_secretexx
 client_secret*.zip
 *.env
 .env.*
